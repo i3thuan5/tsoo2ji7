@@ -32,7 +32,7 @@ export default class 鍵盤 extends React.Component {
     let 一般陣列鈕仔 = this.轉鈕仔(一般符號陣列);
     let 注音陣列鈕仔 = this.轉鈕仔(注音陣列);
     return (
-       <Tabs>
+       <Tabs className="tabs">
         <TabList>
           <Tab>使用說明</Tab>
           <Tab>一般符號</Tab>

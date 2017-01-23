@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-size: 350%;
+  font-size: 100%;
 }
 
 .app.background {
@@ -33,6 +33,10 @@ body {
 
 .app .app.footer {
   background: #1b1c1d;
+}
+
+.app .tabs{
+  min-height: 400px;
 }
 
 @font-face {

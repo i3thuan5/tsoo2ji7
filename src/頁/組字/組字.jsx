@@ -6,7 +6,7 @@ export default class 組字 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      組字式: this.props.組字式 || '',
+      組字式: this.props.組字式 || '⿰糸且',
     };
   }
 
@@ -19,7 +19,7 @@ export default class 組字 extends React.Component {
   render () {
     let { 組字式 } = this.state;
     return (
-      <article>
+      <div className="ui text container">
         <section id="線上組字">
           <table><tbody>
           <tr>
@@ -40,7 +40,7 @@ export default class 組字 extends React.Component {
           <鍵盤 加物件={this.addTextonInputSelection.bind(this)} />
           </section>
           
-        </article>
+        </div>
      );
   }
 
