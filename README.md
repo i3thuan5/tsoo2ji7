@@ -1,8 +1,4 @@
-# 寫啥物 - 臺語翻譯發音
-[![Build Status](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4.svg?branch=master)](https://travis-ci.org/sih4sing5hong5/sia2_siann2-mih4)
-[![devDependency Status](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4/dev-status.svg)](https://david-dm.org/sih4sing5hong5/sia2_siann2-mih4#info=devDependencies)
-
-[寫啥物](http://xn--7zrr5mu7u.xn--v0qr21b.xn--kpry57d)提供使用者臺語翻譯和語音朗讀。
+# 組字 - 組字表達式
 
 
 ## 開發
@@ -19,10 +15,6 @@
 
 
 ## 相關連結
-* 後端專案
-  * [臺灣言語服務](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_hok8-bu7)
-* API介面
-  * [apiary](https://app.apiary.io/tai5uan5gian5gi2hok8bu7/editor)
 * 相關專案
   * [臺灣言語資料庫](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_tsu1-liau7-khoo3)
   * [臺灣言語工具](https://github.com/sih4sing5hong5/tai5-uan5_gian5-gi2_kang1-ku7)
