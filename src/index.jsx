@@ -6,17 +6,16 @@ import 組字 from './頁/組字/組字';
 import './app.css';
 import Debug from 'debug';
 
-// Debug.enable('tsoo:*');
+Debug.enable('tsoo:*');
 
 const root = document.getElementById('app');
 
-// render(
-// <Router history={browserHistory}>
-//       <Route path='/' component={網站}>
-//           <IndexRoute component={組字}/>
-//           <Route path='*' component={組字}/>
-//       </Route>
-//   </Router>,
-//   root
-
-render(<div></div>, root);
+render(
+<Router history={browserHistory}>
+      <Route path='/' component={網站}>
+          <IndexRoute component={組字}/>
+          <Route path='*' component={組字}/>
+      </Route>
+  </Router>,
+  root
+);
