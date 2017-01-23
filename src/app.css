@@ -37,7 +37,12 @@ body {
 
 .app .tabs{
   min-height: 400px;
+  width:100%;
 }
+
+.ui.basic.table { border:none; }
+
+.ui.form textarea {resize: none;}
 
 @font-face {
   font-family: "MOEDICT";

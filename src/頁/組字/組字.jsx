@@ -19,26 +19,33 @@ export default class 組字 extends React.Component {
   render () {
     let { 組字式 } = this.state;
     return (
-      <div className="ui text container">
-        <section id="線上組字">
-          <table><tbody>
+      <div className="ui grid text container">
+        <div className="sixteen column">
+          <table className="ui basic table"><tbody>
           <tr>
             <td>
               <組字圖 組字式={組字式}/>
             </td>
             <td>
-              <textarea id='組字式輸入' ref="組字式輸入"
+            <div className="ui form">
+              <div className="field">
+              <label>組字式</label>
+                <textarea id='組字式輸入'
+                ref="組字式輸入"
                 defaultValue={組字式}
                 onKeyUp={this.改組字式.bind(this)}
                 onChange={this.改組字式.bind(this)}
+                rows="2"
                 ></textarea>
+              </div>
+              </div>
             </td>
           </tr>
           </tbody></table>
           
           <br />
           <鍵盤 加物件={this.addTextonInputSelection.bind(this)} />
-          </section>
+          </div>
           
         </div>
      );
