@@ -1,0 +1,11 @@
+#IDE
+.project
+
+# Distribution / packaging
+.Python
+env/
+build/
+
+# PyBuilder
+target/
+/node_modules/
