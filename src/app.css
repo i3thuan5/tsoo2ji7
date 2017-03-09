@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-.app .main.container {
+.app > .main.container {
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
