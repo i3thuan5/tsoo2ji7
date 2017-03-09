@@ -58,7 +58,7 @@ export default class 鍵盤 extends React.Component {
         <div key={i}>
           {陣列.map(
             (符號)=>
-                <input className="tsoo2ji7liu2a2" type="button" key={符號} value={符號}
+                <input className="ui black basic button tsoo2ji7liu2a2" type="button" key={符號} value={符號}
                  onClick={this.props.加物件.bind(this, 符號)} />
            )}
         </div>

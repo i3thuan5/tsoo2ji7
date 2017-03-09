@@ -4,6 +4,16 @@
 	vertical-align: top;
 }
 
+.app .tabs{
+  min-height: 400px;
+  width:100%;
+}
+
+.ui.button.tsoo2ji7liu2a2 {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
 /*---組字說明---*/
 span.wordoo:before {content:'⿴';}
 span.wordpq:before {content:'⿰';}

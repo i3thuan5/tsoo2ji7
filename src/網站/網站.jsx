@@ -1,6 +1,7 @@
 import React from 'react';
 import 頁頭 from './頁頭';
 import 頁尾 from './頁尾';
+import './網站.css';
 
 import Debug from 'debug';
 var debug = Debug('sia2:網站');
