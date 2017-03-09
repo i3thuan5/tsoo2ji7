@@ -19,7 +19,7 @@ export default class 組字 extends React.Component {
   render () {
     let { 組字式 } = this.state;
     return (
-      <div className="ui grid text container">
+      <div className="ui main grid text container">
         <div className="sixteen column">
           <table className="ui basic table"><tbody>
           <tr>
