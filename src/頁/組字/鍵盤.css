@@ -4,6 +4,11 @@
 	vertical-align: top;
 }
 
+.app .tabs{
+  min-height: 400px;
+  width:100%;
+}
+
 /*---組字說明---*/
 span.wordoo:before {content:'⿴';}
 span.wordpq:before {content:'⿰';}

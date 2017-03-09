@@ -35,14 +35,9 @@ body {
   background: #1b1c1d;
 }
 
-.app .tabs{
-  min-height: 400px;
-  width:100%;
+.app.footer .ui.menu {
+  justify-content: center;
 }
-
-.ui.basic.table { border:none; }
-
-.ui.form textarea {resize: none;}
 
 @font-face {
   font-family: "MOEDICT";

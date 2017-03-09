@@ -1,3 +1,9 @@
+.ui.basic.table { 
+  border:none; 
+}
+
 .ui.form textarea {
   font-size: 2rem;
+  resize: none;
 }
+
