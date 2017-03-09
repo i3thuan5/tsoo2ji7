@@ -1,6 +1,7 @@
 import React from 'react';
 import 組字圖 from './組字圖';
 import 鍵盤 from './鍵盤';
+import './組字.css';
 
 export default class 組字 extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class 組字 extends React.Component {
                 defaultValue={組字式}
                 onKeyUp={this.改組字式.bind(this)}
                 onChange={this.改組字式.bind(this)}
-                rows="2"
+                rows="1"
                 ></textarea>
               </div>
               </div>
