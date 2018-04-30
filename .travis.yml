@@ -1,0 +1,24 @@
+sudo: false
+language: node_js
+node_js:
+- node
+env:
+- TSI2_LING7='build'
+- TSI2_LING7='test'
+branches:
+  only:
+  - master
+script:
+- echo npm run $TSI2_LING7
+- npm run $TSI2_LING7
+before_deploy:
+- npm run build
+deploy:
+  provider: pages
+  fqdn: xn--p8s720f.xn--v0qr21b.xn--kpry57d
+  skip_cleanup: true
+  local_dir: build/
+  github_token:
+    secure: lMQythfD+KpL7IiaY4glE9RDIs3oJK8Gatz5vn3ocjJkfJ5nvrQukwUVsVWnxDI2hPAucZiZSe7l6z0k7wS9W0y4vXir6n5Z/m05kbcGnjgZOpum5D7cHYQEMrWbetj93z8vd0ViVrvI0fp+U4pdLg+KLG82e9BYObo3m7xCt8oiNZd+T317Ua2aSASxDEGcbPiN9aZqQbfKO19huAzXr5f+0aa/0b/PgGGnrAld9rqCNDdrFa79ylceIa43D8f8mJKxDH/QrMDC3cx0iTzl62VcKGtVbNf+cLH4UlKlCv0/FCzgQx/wBBF95G6yHKYLdr19ZssZ6AIX+6cjaymFcxp8TvCNTxcn2YGbrXQ3YtA0OW08J+rTglQ6BszJ82QfseOPGiiF2Ff6YSelXYwMB3YZVlpkSZF46xX9+XffooPPp/djQurSnz8BtqUd8BMwRfPLi2rWiPXzw7KzSQ3A27EkXHfcsu/SoXZQ4b1o5cpRo2/D292YFTLhjlPvJGdHXWPE3E0UBIuQH8aq+K5X3Niim6DTn13r4tdZCbDjqAYH3zwYY0zdU06QIy2aNxm5PTumSW2ALcIQ4TWzpY6nxCSTIUKxxMAWGV0Qq+/DXa55JLsrQg5GJ4MfL3eqegVT8xkju527lMmlktZz8tO50NbjAyqy/T8bctymz/blVvQ=
+  on:
+    branch: master
