@@ -38,6 +38,12 @@ export default class 組字圖 extends React.Component {
       } else {
         num++;
       }
+      
+      // UTF-16 代理對，要跳過
+      if ((組字式.charCodeAt(i) & 0xf800) === 0xd800 &&
+          i < 組字式.length - 1 &&
+          (組字式.charCodeAt(i + 1) & 0xf800) === 0xd800)
+        i++;
 
       i++;
     }
